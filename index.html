@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merrell Men's Moab 3 Performance Vented Hiking Shoe — Catalog Extract Viewer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #faf6f2;
+    --surface: #ffffff;
+    --surface-2: #f2f4f7;
+    --surface-warm: #fcf6ef;
+    --border: #e4e7ec;
+    --border-dark: #d0d5dd;
+    --text: #121212;
+    --text-dim: rgba(0,0,0,0.56);
+    --text-muted: #667085;
+    --accent: #121212;
+    --accent-green: #00D54B;
+    --accent-green-dark: #00b158;
+    --cta: #ec5a29;
+    --cta-hover: #d44e21;
+    --warm-brown: #2b180a;
+    --warm-taupe: #94877c;
+    --green: #00b158;
+    --orange: #ec5a29;
+    --red: #d44e21;
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  body {
+    font-family: 'Inter', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .top-bar {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+  }
+
+  .top-bar-left { display: flex; align-items: center; gap: 12px; }
+
+  .logo {
+    width: 28px; height: 28px; background: var(--accent); border-radius: 6px;
+    display: grid; place-items: center; font-weight: 700; font-size: 14px; color: white;
+  }
+
+  .top-bar h1 { font-size: 15px; font-weight: 600; color: var(--text); font-family: 'DM Sans', 'Inter', sans-serif; }
+
+  .badge { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+  .badge-success { background: rgba(0,213,75,.1); color: var(--green); }
+  .badge-info { background: rgba(18,18,18,.06); color: var(--text); }
+  .badge-warn { background: rgba(236,90,41,.1); color: var(--orange); }
+  .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+  .container { max-width: 1320px; margin: 0 auto; padding: 28px 32px; }
+
+  .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+  .gallery { display: flex; gap: 16px; }
+  .gallery-thumbs { display: flex; flex-direction: column; gap: 10px; }
+  .gallery-thumb { width: 72px; height: 72px; border-radius: var(--radius-sm); overflow: hidden; cursor: pointer; border: 2px solid var(--border); transition: border-color .2s, transform .15s; background: #fff; }
+  .gallery-thumb.active { border-color: var(--accent); }
+  .gallery-thumb:hover { transform: scale(1.05); }
+  .gallery-thumb img { width: 100%; height: 100%; object-fit: contain; }
+  .gallery-main { flex: 1; background: #fff; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; display: grid; place-items: center; aspect-ratio: 7/8.56; max-height: 520px; }
+  .gallery-main img { max-width: 100%; max-height: 100%; object-fit: contain; transition: opacity .3s; }
+
+  .product-info { display: flex; flex-direction: column; gap: 20px; }
+  .brand-label { font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent-green-dark); font-weight: 600; }
+  .product-title { font-size: 28px; font-weight: 700; line-height: 1.25; font-family: 'DM Sans', 'Inter', sans-serif; color: var(--warm-brown); }
+  .product-summary { color: var(--text-dim); font-size: 15px; line-height: 1.7; }
+
+  .price-row { display: flex; align-items: baseline; gap: 12px; }
+  .price { font-size: 32px; font-weight: 700; color: var(--text); }
+  .price-currency { font-size: 16px; color: var(--text-muted); font-weight: 500; }
+
+  .rating-row { display: flex; align-items: center; gap: 10px; }
+  .stars { display: flex; gap: 2px; }
+  .star { width: 18px; height: 18px; color: var(--cta); }
+  .star-empty { color: var(--border-dark); }
+  .rating-text { font-size: 14px; color: var(--text-dim); }
+  .rating-text strong { color: var(--text); }
+
+  .meta-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 500; background: var(--surface); border: 1px solid var(--border); color: var(--text-muted); }
+  .chip-label { color: var(--text); font-weight: 600; margin-right: 4px; }
+
+  .sizes-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .size-btn { width: 52px; height: 38px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 13px; font-weight: 500; cursor: pointer; transition: all .15s; display: grid; place-items: center; }
+  .size-btn:hover, .size-btn.active { border-color: var(--accent); background: rgba(18,18,18,.06); color: var(--text); }
+
+  .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--text-dim); font-weight: 600; margin-bottom: 10px; }
+
+  .cta-row { display: flex; gap: 12px; }
+  .btn-primary { padding: 12px 32px; border-radius: 100px; border: none; background: var(--accent); color: white; font-size: 14px; font-weight: 600; cursor: pointer; transition: background .2s; text-decoration: none; display: inline-flex; align-items: center; }
+  .btn-primary:hover { background: var(--warm-brown); }
+  .btn-outline { padding: 12px 24px; border-radius: 100px; border: 1px solid var(--border-dark); background: transparent; color: var(--text); font-size: 14px; font-weight: 500; cursor: pointer; transition: all .2s; }
+  .btn-outline:hover { border-color: var(--accent); background: var(--surface-2); }
+
+  .content-section { margin-bottom: 56px; }
+  .section-heading { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .section-heading h3 { font-family: 'DM Sans', 'Inter', sans-serif; font-size: 20px; font-weight: 700; color: var(--warm-brown); }
+  .section-heading .section-count { font-size: 12px; font-weight: 600; color: var(--text-muted); background: var(--surface-2); padding: 3px 10px; border-radius: 20px; }
+  .section-heading-icon { width: 32px; height: 32px; border-radius: 8px; display: grid; place-items: center; flex-shrink: 0; }
+  .section-heading-icon svg { width: 18px; height: 18px; }
+
+  .icon-green { background: rgba(0,213,75,.1); color: var(--green); }
+  .icon-orange { background: rgba(236,90,41,.1); color: var(--cta); }
+  .icon-dark { background: rgba(18,18,18,.06); color: var(--text); }
+  .icon-brown { background: rgba(43,24,10,.08); color: var(--warm-brown); }
+  .icon-reddit { background: #ff45001a; color: #ff4500; }
+  .icon-muted { background: var(--surface-2); color: var(--text-muted); }
+
+  .empty-state { background: var(--surface); border: 1px dashed var(--border-dark); border-radius: var(--radius); padding: 48px 32px; text-align: center; }
+  .empty-state-icon { width: 48px; height: 48px; margin: 0 auto 16px; border-radius: 50%; background: var(--surface-2); display: grid; place-items: center; color: var(--text-muted); }
+  .empty-state-icon svg { width: 22px; height: 22px; }
+  .empty-state h4 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+  .empty-state p { font-size: 13px; color: var(--text-muted); max-width: 360px; margin: 0 auto; line-height: 1.6; }
+  .empty-state .empty-detail { margin-top: 16px; font-size: 12px; color: var(--warm-taupe); font-family: 'Fragment Mono', monospace; }
+
+  .attr-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .attr-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+  .attr-card h4 { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 10px; font-weight: 600; }
+  .attr-card p, .attr-card li { font-size: 14px; color: var(--text); }
+  .attr-card ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+  .attr-card ul li { background: var(--surface-2); padding: 4px 12px; border-radius: 16px; font-size: 12px; }
+  .attr-features li { position: relative; padding-left: 16px; margin-bottom: 6px; font-size: 14px; color: var(--text-dim); }
+  .attr-features li::before { content: ''; position: absolute; left: 0; top: 9px; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-green); }
+
+  .img-analysis-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 20px; }
+  .img-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  .img-card-preview { background: var(--surface-warm); height: 220px; display: grid; place-items: center; border-bottom: 1px solid var(--border); }
+  .img-card-preview img { max-height: 200px; max-width: 100%; object-fit: contain; }
+  .img-card-body { padding: 18px; }
+  .img-card-body h4 { font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+  .img-card-body p { font-size: 13px; color: var(--text-dim); line-height: 1.6; margin-bottom: 12px; }
+  .color-swatches { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .color-swatch { display: flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 16px; background: var(--surface-2); font-size: 11px; color: var(--text-dim); }
+  .swatch-dot { width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--border-dark); }
+  .label-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .label-tag { padding: 2px 8px; border-radius: 4px; font-size: 10px; background: var(--surface-2); color: var(--text-dim); }
+
+  .reviews-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+  .reviews-summary { display: flex; align-items: center; gap: 16px; }
+  .reviews-big-num { font-size: 48px; font-weight: 700; color: var(--text); line-height: 1; font-family: 'DM Sans', 'Inter', sans-serif; }
+  .reviews-bars { display: flex; flex-direction: column; gap: 4px; }
+  .review-bar-row { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-dim); }
+  .review-bar-row span:first-child { width: 12px; text-align: right; }
+  .review-bar { width: 120px; height: 6px; background: var(--surface-2); border-radius: 3px; overflow: hidden; }
+  .review-bar-fill { height: 100%; background: var(--cta); border-radius: 3px; }
+  .reviews-list { display: grid; gap: 14px; }
+  .review-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+  .review-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .review-card-header h4 { font-size: 14px; font-weight: 600; }
+  .review-meta { font-size: 12px; color: var(--text-dim); display: flex; gap: 12px; }
+  .review-card p { font-size: 13px; color: var(--text-dim); line-height: 1.7; }
+  .review-stars { display: flex; gap: 2px; }
+  .review-star { font-size: 12px; color: var(--cta); }
+  .review-star.empty { color: var(--border-dark); }
+
+  .variants-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .variants-table th { text-align: left; padding: 10px 16px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dim); border-bottom: 1px solid var(--border); font-weight: 600; }
+  .variants-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+  .variants-table tr:hover td { background: var(--surface); }
+
+  .similar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .similar-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; transition: border-color .2s, transform .15s; display: flex; flex-direction: column; gap: 4px; }
+  .similar-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .similar-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .similar-card-icon { display: flex; align-items: center; gap: 8px; }
+  .similar-card-icon img { border-radius: 4px; flex-shrink: 0; }
+  .similar-card-domain { font-size: 12px; color: var(--text-muted); font-weight: 500; }
+  .similar-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 2px; line-height: 1.4; }
+  .similar-card .sim-brand { font-size: 12px; color: var(--accent-green-dark); margin-bottom: 4px; font-weight: 500; }
+  .similar-card a { font-size: 12px; color: var(--accent-green-dark); text-decoration: none; font-weight: 500; margin-top: auto; }
+  .similar-card a:hover { text-decoration: underline; }
+  .similarity-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 600; text-transform: uppercase; flex-shrink: 0; }
+  .sim-high { background: rgba(0,213,75,.1); color: var(--green); }
+  .sim-medium { background: rgba(236,90,41,.1); color: var(--orange); }
+  .sim-low { background: rgba(212,78,33,.1); color: var(--red); }
+
+  .reddit-overview { display: grid; grid-template-columns: 1fr auto; gap: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 24px; }
+  .reddit-oneliner { font-size: 16px; line-height: 1.6; color: var(--text); font-weight: 500; }
+  .reddit-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .reddit-sentiment { display: flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; white-space: nowrap; }
+  .sentiment-positive { background: rgba(0,213,75,.1); color: var(--green); }
+  .sentiment-negative { background: rgba(212,78,33,.1); color: var(--red); }
+  .sentiment-mixed { background: rgba(236,90,41,.1); color: var(--orange); }
+  .sentiment-neutral { background: rgba(18,18,18,.06); color: var(--text-muted); }
+  .reddit-confidence { font-size: 12px; color: var(--text-dim); padding: 6px 14px; border-radius: 20px; background: var(--surface-2); white-space: nowrap; }
+  .reddit-subsection { margin-bottom: 28px; }
+  .reddit-subsection-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dim); margin-bottom: 14px; }
+  .reddit-themes { display: grid; gap: 10px; }
+  .reddit-theme { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; display: flex; align-items: center; gap: 12px; }
+  .reddit-theme-name { font-size: 14px; font-weight: 500; color: var(--text); flex: 1; }
+  .stance-badge { padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; text-transform: capitalize; }
+  .stance-positive { background: rgba(0,213,75,.1); color: var(--green); }
+  .stance-negative { background: rgba(212,78,33,.1); color: var(--red); }
+  .stance-mixed { background: rgba(236,90,41,.1); color: var(--orange); }
+  .stance-neutral { background: rgba(18,18,18,.06); color: var(--text-muted); }
+  .reddit-gotchas { display: grid; gap: 10px; }
+  .reddit-gotcha { background: var(--surface); border-left: 3px solid var(--border-dark); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 14px 18px; display: flex; align-items: flex-start; gap: 12px; }
+  .gotcha-severity { padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; text-transform: uppercase; flex-shrink: 0; margin-top: 2px; }
+  .gotcha-high { background: rgba(212,78,33,.12); color: var(--red); border-left-color: var(--red); }
+  .gotcha-medium { background: rgba(236,90,41,.12); color: var(--orange); border-left-color: var(--orange); }
+  .gotcha-low { background: rgba(18,18,18,.06); color: var(--text-muted); }
+  .reddit-gotcha.gotcha-high { border-left-color: var(--red); }
+  .reddit-gotcha.gotcha-medium { border-left-color: var(--orange); }
+  .reddit-gotcha.gotcha-low { border-left-color: var(--border-dark); }
+  .gotcha-text { font-size: 13px; color: var(--text-dim); line-height: 1.6; }
+  .reddit-questions { display: grid; gap: 12px; }
+  .reddit-question { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
+  .reddit-question h4 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+  .reddit-question p { font-size: 13px; color: var(--text-dim); line-height: 1.7; }
+  .reddit-comparisons { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+  .reddit-comparison { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
+  .reddit-comparison h4 { font-size: 13px; font-weight: 700; color: var(--accent-green-dark); margin-bottom: 8px; }
+  .reddit-comparison p { font-size: 13px; color: var(--text-dim); line-height: 1.6; }
+  .reddit-evidence { display: grid; gap: 14px; }
+  .reddit-evidence-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
+  .reddit-evidence-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+  .reddit-evidence-card p { font-size: 13px; color: var(--text-dim); line-height: 1.7; margin-bottom: 10px; }
+  .reddit-evidence-footer { display: flex; align-items: center; gap: 12px; font-size: 12px; color: var(--text-muted); }
+  .reddit-evidence-footer a { color: #ff4500; text-decoration: none; font-weight: 500; }
+  .reddit-evidence-footer a:hover { text-decoration: underline; }
+  .reddit-use-cases { display: flex; flex-wrap: wrap; gap: 8px; }
+  .reddit-use-case { padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 500; background: var(--surface); border: 1px solid var(--border); color: var(--text-dim); }
+
+  .json-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; max-height: 600px; overflow: auto; }
+  .json-panel pre { font-family: 'Fragment Mono', 'SF Mono', 'Fira Code', monospace; font-size: 12px; line-height: 1.6; color: var(--text-dim); white-space: pre-wrap; word-break: break-all; }
+  .json-key { color: var(--warm-brown); }
+  .json-string { color: var(--accent-green-dark); }
+  .json-number { color: var(--cta); }
+  .json-bool { color: #7c3aed; }
+  .json-null { color: var(--text-muted); font-style: italic; }
+
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border-dark); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .container { padding: 20px 16px; }
+    .gallery { flex-direction: column-reverse; }
+    .gallery-thumbs { flex-direction: row; }
+    .gallery-thumb { width: 56px; height: 56px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-bar-left">
+    <div class="logo">C</div>
+    <h1>Catalog Extract Viewer</h1>
+  </div>
+  <div style="display:flex;gap:8px;align-items:center;">
+    <span class="badge badge-success"><span class="badge-dot"></span> completed</span>
+    <span class="badge badge-info">1 Product</span>
+  </div>
+</div>
+
+<div class="container" id="app"></div>
+
+<script>
+const DATA = {"data":[{"url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002","product":{"id":"70372c4c-2c5d-4590-b784-ec1c4b97a6fe","title":"Men's Moab 3 Performance Vented Hiking Shoe","description":"A protective rubber cap toe and breathable mesh design combine with advanced cushioning and outsole design make the MOAB 3 hiking sneakers from Merrell the perfect choice for both comfort, stability and performance when it's time to hit the trails.","vendor":"macys.com","brand":"Merrell","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002","handle":"merrell-mens-moab-3-performance-vented-hiking-shoe","is_available":true,"attributes":{"additional_attributes":["protective rubber cap toe","breathable mesh vented upper","advanced cushioning","performance-oriented outsole design for stability","trail-ready sneaker silhouette"],"age_group":"adult","gender":"male","summary":"Vented performance hiking shoe with a protective rubber cap toe, breathable mesh upper, advanced cushioning and a performance-focused outsole for comfort and stability on the trail.","features":"Protective rubber cap toe; breathable mesh vented design; advanced cushioning; specialized outsole design for stability and performance.","color":{"iscc_family":"brown","merchant_label":"Walnut"},"material":{"primary":"rubber","merchant_label":"Protective rubber cap toe; breathable mesh upper"},"style":["performance","technical"],"occasion":["hiking"]},"price":{"current_value":140,"compare_at_value":140,"currency":"USD"},"images":[{"url":"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe product image (primary)","attributes":{"labels":["one low-cut hiking shoe / trail shoe","Merrell brand (visible on midsole)","Vibram outsole (visible yellow logo)","suede upper overlays","breathable mesh panels","rubber toe cap/bumper","textured lugged outsole","cushioned midsole","round hiking laces with flecks","metal/plastic lace eyelets and lace loops","heel pull tab","stitching details","studio product photograph","white background","three-quarter side view (shoe angled right)"],"text":"MERRELL; VIBRAM","colors":[{"color":"tan / beige","context":"suede upper overlays and majority of the shoe upper"},{"color":"brown","context":"mesh panels under the suede overlays and some fabric areas"},{"color":"black","context":"rubber toe cap, outsole tread, and inner collar lining"},{"color":"olive / dark green","context":"midsole and accents on the outsole"},{"color":"orange","context":"'MERRELL' text on the midsole, small lace loops, and heel pull tab accent"},{"color":"yellow","context":"Vibram logo on the outsole and flecks in the laces"}],"description":"Studio product photo of a single low-cut Merrell hiking/trail shoe shown on a white background, angled in a three-quarter side view. The shoe has tan suede overlays over brown mesh, a black rubber toe cap and lugged Vibram outsole, patterned laces, and visible brand text on the midsole.","confidence":"high","flat_lay":false},"position":1,"width":700,"height":856,"id":"img-1772157089644-0","variant_ids":["variant-1772157089644-0","variant-1772157089644-1","variant-1772157089644-2","variant-1772157089644-3","variant-1772157089644-4","variant-1772157089644-5","variant-1772157089644-6","variant-1772157089644-7","variant-1772157089644-8","variant-1772157089644-9"]},{"url":"https://slimages.macysassets.com/is/image/MCY/products/7/optimized/22568337_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe product image 2","attributes":{"labels":["single hiking/trekking shoe (side profile)","Merrell branding on midsole","Vibram logo on outsole","suede upper overlays","mesh upper panels","rubber toe cap","rubber lugged outsole / traction lugs","midsole","lace system with round two-tone laces","metal/plastic eyelets","heel pull loop","tongue","stitched seams","studio product shot on white background","soft shadow beneath shoe"],"text":"MERRELL; vibram","colors":[{"color":"brown/tan","context":"suede upper overlays and portions of the upper body"},{"color":"dark brown","context":"mesh upper panels and inner lining"},{"color":"black","context":"rubber toe cap, parts of outsole tread, and edging around collar"},{"color":"olive / dark gray-green","context":"midsole and some outsole elements"},{"color":"orange","context":"MERRELL text on midsole and small accents on laces"},{"color":"yellow","context":"Vibram logo on outsole"},{"color":"tan / yellowish","context":"round shoelaces (two-tone with dark strands)"},{"color":"white","context":"background of the product photo"}],"description":"Studio product image showing a single Merrell hiking shoe in side profile on a white background. The shoe has suede overlays, mesh panels, a rubber toe cap, lugged Vibram outsole, two-tone laces, and visible MERRELL branding on the midsole.","confidence":"high","flat_lay":false},"position":2,"width":700,"height":856,"id":"img-1772157089644-1","variant_ids":["variant-1772157089644-0","variant-1772157089644-1","variant-1772157089644-2","variant-1772157089644-3","variant-1772157089644-4","variant-1772157089644-5","variant-1772157089644-6","variant-1772157089644-7","variant-1772157089644-8","variant-1772157089644-9"]},{"url":"https://slimages.macysassets.com/is/image/MCY/products/9/optimized/22568389_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe product image 3","attributes":{"labels":["single hiking shoe","Merrell brand shoe","lace-up shoe","suede upper","mesh panels","rubber toe cap","rubber outsole (partial)","shoe tongue","heel pull tab","shoe laces (two-tone)","insole with branding","stitching details","eyelets/lace loops","top-down view/product photography","white background"],"text":"MERRELL\nM (circular logo on tongue)","colors":[{"color":"brown/tan","context":"suede upper panels and vamp (main body of the shoe)"},{"color":"dark brown","context":"mesh panels and side inserts"},{"color":"black","context":"rubber toe cap and outsole edges; inner lining and insole background"},{"color":"orange","context":"circular 'M' logo on the tongue; small accent on lace loops and heel pull tab"},{"color":"yellow and black (two-tone)","context":"shoelaces (striped pattern)"},{"color":"beige/light tan","context":"stitching and some suede trim accents"},{"color":"white","context":"'MERRELL' text printed on the insole"}],"description":"Top-down product photo of a single Merrell lace-up hiking shoe. The shoe has brown/tan suede panels with dark brown mesh inserts, a black rubber toe cap and outsole, two-tone (yellow/black) laces, orange accent logo on the tongue, and 'MERRELL' printed on the insole. The shoe is photographed on a white background.","confidence":"high","flat_lay":true},"position":3,"width":700,"height":856,"id":"img-1772157089644-2","variant_ids":["variant-1772157089644-0","variant-1772157089644-1","variant-1772157089644-2","variant-1772157089644-3","variant-1772157089644-4","variant-1772157089644-5","variant-1772157089644-6","variant-1772157089644-7","variant-1772157089644-8","variant-1772157089644-9"]}],"options":[{"name":"Color","position":1,"values":["Walnut"]},{"name":"Size","position":2,"values":["7","8","8.5","9","9.5","10","10.5","11","11.5","12"]}],"variants":[{"id":"variant-1772157089644-0","title":"Men's Moab 3 Performance Vented Hiking Shoe - Walnut - 7","image":{"url":"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe - Walnut - 7 variant image","position":1,"width":700,"height":856,"id":"img-variant-variant-1772157089644-0","variant_ids":["variant-1772157089644-0"]},"is_available":true,"price":{"current_value":140,"compare_at_value":null,"currency":"USD"},"sku":"194713942402USA","option1":"Walnut","option2":"7","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002"},{"id":"variant-1772157089644-1","title":"Men's Moab 3 Performance Vented Hiking Shoe - Walnut - 8","image":{"url":"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe - Walnut - 8 variant image","position":2,"width":700,"height":856,"id":"img-variant-variant-1772157089644-1","variant_ids":["variant-1772157089644-1"]},"is_available":true,"price":{"current_value":140,"compare_at_value":null,"currency":"USD"},"sku":"194713942426USA","option1":"Walnut","option2":"8","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002"},{"id":"variant-1772157089644-2","title":"Men's Moab 3 Performance Vented Hiking Shoe - Walnut - 8.5","image":{"url":"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe - Walnut - 8.5 variant image","position":3,"width":700,"height":856,"id":"img-variant-variant-1772157089644-2","variant_ids":["variant-1772157089644-2"]},"is_available":true,"price":{"current_value":140,"compare_at_value":null,"currency":"USD"},"sku":"194713942433USA","option1":"Walnut","option2":"8.5","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002"},{"id":"variant-1772157089644-3","title":"Men's Moab 3 Performance Vented Hiking Shoe - Walnut - 9","image":{"url":"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe - Walnut - 9 variant image","position":4,"width":700,"height":856,"id":"img-variant-variant-1772157089644-3","variant_ids":["variant-1772157089644-3"]},"is_available":true,"price":{"current_value":140,"compare_at_value":null,"currency":"USD"},"sku":"194713942440USA","option1":"Walnut","option2":"9","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002"},{"id":"variant-1772157089644-4","title":"Men's Moab 3 Performance Vented Hiking Shoe - Walnut - 9.5","image":{"url":"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe - Walnut - 9.5 variant image","position":5,"width":700,"height":856,"id":"img-variant-variant-1772157089644-4","variant_ids":["variant-1772157089644-4"]},"is_available":true,"price":{"current_value":140,"compare_at_value":null,"currency":"USD"},"sku":"194713942457USA","option1":"Walnut","option2":"9.5","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002"},{"id":"variant-1772157089644-5","title":"Men's Moab 3 Performance Vented Hiking Shoe - Walnut - 10","image":{"url":"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe - Walnut - 10 variant image","position":6,"width":700,"height":856,"id":"img-variant-variant-1772157089644-5","variant_ids":["variant-1772157089644-5"]},"is_available":true,"price":{"current_value":140,"compare_at_value":null,"currency":"USD"},"sku":"194713942464USA","option1":"Walnut","option2":"10","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002"},{"id":"variant-1772157089644-6","title":"Men's Moab 3 Performance Vented Hiking Shoe - Walnut - 10.5","image":{"url":"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe - Walnut - 10.5 variant image","position":7,"width":700,"height":856,"id":"img-variant-variant-1772157089644-6","variant_ids":["variant-1772157089644-6"]},"is_available":true,"price":{"current_value":140,"compare_at_value":null,"currency":"USD"},"sku":"194713942471USA","option1":"Walnut","option2":"10.5","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002"},{"id":"variant-1772157089644-7","title":"Men's Moab 3 Performance Vented Hiking Shoe - Walnut - 11","image":{"url":"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe - Walnut - 11 variant image","position":8,"width":700,"height":856,"id":"img-variant-variant-1772157089644-7","variant_ids":["variant-1772157089644-7"]},"is_available":true,"price":{"current_value":140,"compare_at_value":null,"currency":"USD"},"sku":"194713942488USA","option1":"Walnut","option2":"11","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002"},{"id":"variant-1772157089644-8","title":"Men's Moab 3 Performance Vented Hiking Shoe - Walnut - 11.5","image":{"url":"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe - Walnut - 11.5 variant image","position":9,"width":700,"height":856,"id":"img-variant-variant-1772157089644-8","variant_ids":["variant-1772157089644-8"]},"is_available":true,"price":{"current_value":140,"compare_at_value":null,"currency":"USD"},"sku":"194713942495USA","option1":"Walnut","option2":"11.5","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002"},{"id":"variant-1772157089644-9","title":"Men's Moab 3 Performance Vented Hiking Shoe - Walnut - 12","image":{"url":"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp","alt_text":"Men's MOAB 3 Performance Vented Hiking Shoe - Walnut - 12 variant image","position":10,"width":700,"height":856,"id":"img-variant-variant-1772157089644-9","variant_ids":["variant-1772157089644-9"]},"is_available":true,"price":{"current_value":140,"compare_at_value":null,"currency":"USD"},"sku":"194713942501USA","option1":"Walnut","option2":"12","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002"}],"store_canonical_url":"https://www.macys.com/","store_domain":"www.macys.com","platform":null,"platform_id":"13515002","description_html":"<html><head><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Men's Shoes\",\"item\":{\"@type\":\"Thing\",\"id\":\"https://www.macys.com/shop/mens-shoes?id=65\"}}]}<\/script></head><body><div><div><section><div><div><div><p><a><b></b></a><b><a>TODAY'S DEALS</a></b></p></div><ul><li><a><b>Up to 60% off</b> <span>spring newness</span></a></li><li><a><b>Up to 80% off</b> <span>clearance</span></a></li><li><a><b>Up to 80% off</b> <span>women's boots</span></a></li><li><a><b>Up to 50% off</b> <span>bedding</span></a></li></ul><div><a><b>See All</b><i></i></a></div></div></div></section></div></div><div><div><main><div><div></div></div><div><div><div><div><div><div><article><div><ul><li><div><div><picture><img alt=\"Merrell Men's MOAB 3 Performance Vented Hiking Shoe\" width=\"82\" height=\"103\" data-img-url=\"https://www.macys.com/is/image/MCY/products/6/optimized/22568336_fpx.tif\" src=\"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&amp;wid=82&amp;fit=fit,1&amp;fmt=webp\"></picture></div><div></div></div></li><li><div><div><picture><img alt=\"Merrell Men's MOAB 3 Performance Vented Hiking Shoe\" width=\"82\" height=\"103\" data-img-url=\"https://www.macys.com/is/image/MCY/products/7/optimized/22568337_fpx.tif\" src=\"https://slimages.macysassets.com/is/image/MCY/products/7/optimized/22568337_fpx.tif?op_sharpen=1&amp;wid=82&amp;fit=fit,1&amp;fmt=webp\"></picture></div></div></li><li><div><div><picture><img alt=\"Merrell Men's MOAB 3 Performance Vented Hiking Shoe\" width=\"82\" height=\"103\" data-img-url=\"https://www.macys.com/is/image/MCY/products/0/optimized/22568390_fpx.tif\" src=\"https://slimages.macysassets.com/is/image/MCY/products/0/optimized/22568390_fpx.tif?op_sharpen=1&amp;wid=82&amp;fit=fit,1&amp;fmt=webp\"></picture></div></div></li><li><div><div><picture><img alt=\"Merrell Men's MOAB 3 Performance Vented Hiking Shoe\" width=\"82\" height=\"103\" data-img-url=\"https://www.macys.com/is/image/MCY/products/9/optimized/22568389_fpx.tif\" src=\"https://slimages.macysassets.com/is/image/MCY/products/9/optimized/22568389_fpx.tif?op_sharpen=1&amp;wid=82&amp;fit=fit,1&amp;fmt=webp\"></picture></div></div></li></ul></div></article><div><div></div><button><span></span></button><section><div><div><div></div><div><div><div><div><div><ul><li><div><div><picture><img alt=\"Merrell - Men's MOAB 3 Performance Vented Hiking Shoe\" width=\"575\" height=\"718\" data-img-url=\"https://www.macys.com/is/image/MCY/products/6/optimized/22568336_fpx.tif\" src=\"https://slimages.macysassets.com/is/image/MCY/products/6/optimized/22568336_fpx.tif?op_sharpen=1&amp;wid=700&amp;fit=fit,1&amp;fmt=webp\"></picture></div></div></li><li><div><div><picture><img alt=\"Merrell - Men's MOAB 3 Performance Vented Hiking Shoe\" width=\"575\" height=\"718\" data-img-url=\"https://www.macys.com/is/image/MCY/products/7/optimized/22568337_fpx.tif\" src=\"https://slimages.macysassets.com/is/image/MCY/products/7/optimized/22568337_fpx.tif?op_sharpen=1&amp;wid=700&amp;fit=fit,1&amp;fmt=webp\"></picture></div></div></li><li><div><div><picture><img alt=\"Merrell - Men's MOAB 3 Performance Vented Hiking Shoe\" width=\"575\" height=\"718\" data-img-url=\"https://www.macys.com/is/image/MCY/products/9/optimized/22568389_fpx.tif\" src=\"https://slimages.macysassets.com/is/image/MCY/products/9/optimized/22568389_fpx.tif?op_sharpen=1&amp;wid=700&amp;fit=fit,1&amp;fmt=webp\"></picture></div></div></li></ul></div><button></button></div></div></div></div></div></div></section></div></div></div><div><div><h1><span><a>Merrell</a></span><span>Men's MOAB 3 Performance Vented Hiking Shoe</span></h1><div><div><div><div><div></div><div><span>4.6</span><span> (<a>700</a>) </span></div></div></div></div></div></div><div><div><div><div><span><span><span><span><span>$140.00</span></span></span></span><span></span></span><button>Details</button></div></div></div><div></div><div><div><div><span><span>Color:</span><span>Walnut</span></span></div></div></div><div><div><div><span>Size:</span><span> Please select </span></div><div><button>Size Chart</button></div></div><div><div><div><fieldset><legend>Tiles</legend><div><label><span>7</span></label></div><div><label><span>8</span></label></div><div><label><span>8.5</span></label></div><div><label><span>9</span></label></div><div><label><span>9.5</span></label></div><div><label><span>10</span></label></div><div><label><span>10.5</span></label></div><div><label><span>11</span></label></div><div><label><span>11.5</span></label></div><div><label><span>12</span></label></div></fieldset></div></div></div></div></div><div><div><button><span>Add To Bag</span></button><button> Buy Now </button></div><button>Add to registry</button></div><div><div><div><div><span></span></div><div><div><klarna-placement></klarna-placement></div></div><i></i><button></button></div></div></div><div><div><div><div><div><div><div><div>You may also like</div></div></div><div><div><div><div></div><div><button></button></div></div></div></div></div></div></div></div></div><div></div><div></div></div><div><section><div><div><div><p>A protective rubber cap toe and breathable mesh design combine with advanced cushioning and outsole design make the MOAB 3 hiking sneakers from Merrell the perfect choice for both comfort, stability and performance when it's time to hit the trails.</p></div><ul><li><h3>Product Features</h3><div><ul><li><span>Moc-toe lace-up trailer shoe</span></li><li><span>xx style</span></li><li><span>Bellows tongue keeps out debris; protective toe cap; breathable mesh lining; Kinetic Fit™ ADVANCED removable contoured insole with reinforced heel cushioning for medium support; molded nylon arch shank</span></li><li><span>Merrell Air Cushion in the heel absorbs shock and adds stability; Super Rebound Compound provides durable shock absorption in the heel to help reduce torque and allow for a smooth transition into the midfoot</span></li><li><span>Vibram® TC5+ outsole designed with a technical compound with great overall performance in all weather conditions. Non-marking formula delivers an all-around balance of grip, traction, durability, flexibility</span></li><li><span>Leather/mesh upper; mesh lining; rubber compound outsole</span></li><li><span>Imported</span></li></ul></div></li><li><h3>Shipping &amp; Returns</h3><div><div><ul><li>California and Minnesota customers call 1-800-289-6229 for Free Shipping information.</li><li>Returns are accepted at any Macy's store within 30 days from purchase date. Last Act items are final sale and sold \"as is.\" No returns, exchanges, or price adjustments allowed.</li><li><div> For complete details, see our <a> Shipping</a> and <a> Returns</a> policies. </div></li><li>Please call customer service for returns.</li></ul></div></div></li><li><div><div><div><div>Have questions?</div><div>Call or chat, our experts are here to help.</div><div><a> 1-800-BUY-MACY</a></div></div><div><button><div></div><div>searching for a style expert...</div></button></div></div></div></li></ul></div><div><button>View more</button></div></div></section></div></div></div></div></div><div><div><div></div></div><div><div><div></div></div><div></div></div><div><div></div><div></div></div><div><div><div></div></div></div><div></div><div><div><div></div></div></div></div></main></div></div><div><div><div></div></div></div></body></html>","product_type":"Men's Shoes","google_product_category_id":"187","google_product_category_path":"Apparel & Accessories > Shoes","tags":["Men's Shoes"],"video_url":null,"review_count":700,"average_rating":4.6,"rating_scale":5,"faqs":null,"reviews":[{"date":"4 days ago","title":"Great shoe but hot inside","rating":3,"content":"Comfortable, durable, great-looking shoe, and waterproof too. But with the benefit of hindsight, it would have been worth the additional cost to have ordered the Gore-tex version instead. The standard waterproof version is hot and sweat-inducing inside. The web site’s “runs small” caution turns out to be true. I followed the advice and the fit was perfect.","image_url":null,"reviewer_name":"Hermes"},{"date":"8 days ago","title":"Toe and Ankle Issues","rating":3,"content":"I bought the Moab 3 about 3 weeks ago and have been wearing them ever since. This is my third pair of Merrell shoes (2 boots and 1 sneaker). I know with the sneaker, it took some time to break in. While wearing the Moab 3’s, I am having toe pain in both feet and sore ankles. I have read the reviews concerning the toe box. Has anyone else had these issues and how long does it take to break in?  Thanks.","image_url":null,"reviewer_name":"GeorgeB"},{"date":"14 days ago","title":"So long to a once great hiking shoe","rating":1,"content":"Time to bid a sad farewell to these shoes, specifically, the Moab line of hiking shoes.  For years, I have owned and worn various versions of Moab all over the world.  \n\nI can line up each pair of Moab's I've owned. They would stretch on for meters.  As one pair wore out, I would buy a new pair and use the old ones for chores around the house.\n\nA few months back I ordered a new pair of Moab 3, expecting the same fit and comfort I had come to know after years of use.  Sadly, this new pair will be my last. \n\nYou've changed something about this new version: The toe box is uncommonly tight and uncomfortable while the heel is loose and rubbing. After months of daily use, they still feel off and are very uncomfortable.  None of my older Moab's feel like this.","image_url":null,"reviewer_name":"TallWalker63"},{"date":"18 days ago","title":"Very uncomfortable shoes","rating":1,"content":"These shoes look great and comfortable but, after wearing them for a week they are killing my feet and lower back. I tried some Columbia hiking shoes that I bought for a half of price, in the same place/environment as the Moab shoes for a week, just to see if it was my feet or back but no, my feet were fine and my back too. I think that something is wrong with these shoes design, something is not right with them. The soonest I put them on and start walking my feet start hurting. I will reach to the company for a refund if I can. Worst shoes ever. I will love to like them but I can’t.","image_url":null,"reviewer_name":"Christian"},{"date":"22 days ago","title":"I thought I was buying  boots !!!!!!!!!!!!!!!!!!!!","rating":1,"content":"That is  a  sneaker.It looks like the boot Ive been getting for 30 years  it's but it's a  sneaker","image_url":null,"reviewer_name":"Dean Pahud"},{"date":"23 days ago","title":"Moab hiking shoes","rating":5,"content":"These are my everyday walking/short hiking shoes. They fit great right out of the box, and they inspire confidence in every step.","image_url":null,"reviewer_name":"Bob"},{"date":"24 days ago","title":"Moab king","rating":5,"content":"My second pair, solid long term boot. They break in quickly.","image_url":null,"reviewer_name":"Tarheel1"},{"date":"24 days ago","title":"Great, comfortable.","rating":5,"content":"This is my second pair and I am just as happy as I was with the first pair.","image_url":null,"reviewer_name":"External reviewer"}],"updated_at":"2026-02-27T01:52:37.472Z","brand_pdp":{"success":false,"brand_pdp_url":null,"brand_domain":"merrell.com","brand_name":"Merrell","product_title":null,"confidence":null,"error":"Product not available on brand site"},"similar_products":[{"title":"Men's Moab 3","url":"https://www.merrell.com/US/en/moab-3/52481M.html","brand":"Merrell","similarity":"high"},{"title":"Merrell Men's MOAB 3 Performance Vented Hiking Shoe","url":"https://www.macys.com/shop/product/merrell-mens-moab-3-performance-vented-hiking-shoe?ID=13515002","brand":"Macy's","similarity":"high"},{"title":"Moab 3 Hiking Shoe (Men)","url":"https://www.nordstrom.com/s/merrell-moab-3-hiking-shoe-men/6570411","brand":"Nordstrom","similarity":"high"},{"title":"Merrell Moab 3","url":"https://www.zappos.com/p/mens-merrell-moab-3-granite-v2/product/9597127/color/941398","brand":"Zappos","similarity":"high"},{"title":"Merrell Men's Moab 3 Hiking Shoes","url":"https://www.dickssportinggoods.com/p/merrell-mens-moab-3-hiking-shoes-22mrrmmb3wlntxxxxfbo/22mrrmmb3wlntxxxxfbo","brand":"DICK'S Sporting Goods","similarity":"high"},{"title":"Merrell MOAB 3 Vent Trail Shoe - Men's","url":"https://www.dsw.com/product/merrell-moab-3-vent-trail-shoe---mens/566991","brand":"DSW","similarity":"high"},{"title":"Merrell Men's Moab 3 Vent Hiking Sneakers","url":"https://www.dillards.com/p/merrell-mens-moab-3-vent-hiker-shoes/515243222","brand":"Dillard's","similarity":"high"},{"title":"Merrell MOAB 3 Men's","url":"https://www.footlocker.com/product/merrell-moab-3-mens/J038205.html","brand":"Foot Locker","similarity":"high"},{"title":"Men's Merrell Moab 3 Vent Hiking Shoes","url":"https://www.shoecarnival.com/mens_merrell_moab_3_vent_hiking_shoes/133747.html","brand":"Shoe Carnival","similarity":"high"},{"title":"Merrell Men's Moab 3 Sneakers","url":"https://www.belk.com/p/merrell-mens-moab-3-sneakers/0438692616993.html","brand":"Belk","similarity":"high"}],"reddit_insights":{"status":"ok","generated_at":"2026-02-27T00:00:00Z","match":{"confidence":0.86,"matched_terms":["Merrell Moab 3","Merrell Moab 3 Vent","Moab 3 Vent","Moab 3 waterproof","Merrell Moabs","Merrell Moab 3 Mid hiking waterproof boot"],"notes":"All six threads are about Merrell Moab 3 (or Moab generally). Many comments don’t specify men’s vs women’s or the exact “Performance Vented” variant, but when ventilation is mentioned it matches the vented (non‑waterproof) Moab 3. I treated them as the same product family, focusing only where Moab 3 and/or vent/non‑waterproof is explicit."},"coverage":{"threads_used":6,"subreddits":["hiking","CampingGear","tacticalgear"]},"conversation_summary":{"one_liner":"Redditors see the Merrell Moab 3 (especially the vented version) as a very comfortable, beginner‑friendly hiking shoe/boot with great out‑of‑the‑box fit but only mid‑tier durability and mixed wet‑weather performance.","sentiment":{"label":"mixed","score":0.18,"explanation":"Most users praise comfort, fit (especially for wide feet), and value, but durability complaints and poor performance on wet/slick surfaces are recurring, especially among heavy users and on rough terrain."},"top_themes":[{"theme":"Comfort and fit (especially for wide feet)","stance":"positive","evidence":["r_e_1","r_e_2","r_e_3","r_e_4","r_e_5"]},{"theme":"Durability and lifespan for frequent/hard use","stance":"mixed","evidence":["r_e_1","r_e_2","r_e_3","r_e_4","r_e_5"]},{"theme":"Vented (non‑waterproof) vs waterproof versions","stance":"mixed","evidence":["r_e_1","r_e_2","r_e_3","r_e_6"]},{"theme":"Traction and performance on wet/slippery terrain","stance":"mixed","evidence":["r_e_1","r_e_2","r_e_4","r_e_6"]},{"theme":"“Beginner/occasional hiker” boot versus higher‑end options","stance":"mixed","evidence":["r_e_1","r_e_3","r_e_5"]},{"theme":"Use for work/tactical/everyday wear as well as hiking","stance":"positive","evidence":["r_e_1","r_e_3","r_e_4"]}],"use_cases":[{"use_case":"Day hikes and moderate trails in warm or temperate weather (vented/non‑waterproof version)","evidence":["r_e_1","r_e_2","r_e_3","r_e_5","r_e_6"]},{"use_case":"Occasional weekend hiking and light backpacking rather than heavy thru‑hiking","evidence":["r_e_1","r_e_3","r_e_5"]},{"use_case":"Everyday wear, work, and light outdoor chores because of comfort and support","evidence":["r_e_1","r_e_3","r_e_4"]},{"use_case":"Tactical or range use where a hiking‑style boot is acceptable","evidence":["r_e_1","r_e_4"]},{"use_case":"Camping and general outdoor recreation for users who prioritize comfort over maximum longevity","evidence":["r_e_2","r_e_3"]}],"comparisons":[{"compared_to":"Merrell Moab 2","summary":"Several commenters say the Moab 3 is similar in feel to the Moab 2 but with a different/larger lug pattern, reworked support, and in some opinions is an overall improvement; others treat them as essentially the same mid‑tier boot in quality.","evidence":["r_e_1","r_e_5"]},{"compared_to":"Higher‑end trail runners and boots (e.g., Hoka Speedgoat, more premium brands)","summary":"A few hikers moved from Moab 3 to more advanced footwear for serious mileage and rough terrain, characterizing the Moab line as good for beginners/occasional use but not their choice for long, technical hikes.","evidence":["r_e_1","r_e_5"]},{"compared_to":"Other mid‑priced hiking boots","summary":"Within the mid‑range category, Moab 3 is seen as roughly comparable quality: very comfortable but not exceptionally durable, with users often deciding based on fit rather than clear performance superiority.","evidence":["r_e_1","r_e_2","r_e_3"]}],"common_questions":[{"question":"Is the Merrell Moab 3 still a quality shoe compared to earlier versions?","short_answer":"Most say yes: it’s still a solid, mid‑tier hiking shoe/boot with good comfort and fit; some even find the Moab 3 improved over the 2 in grip and support, though durability remains only average for heavy use.","evidence":["r_e_1","r_e_3","r_e_5"]},{"question":"How durable is the Moab 3 for frequent or rough hiking?","short_answer":"Light and occasional hikers report many months to years of use, but heavy users on rocky, steep terrain often see noticeable breakdown within a year or even a few months, especially in the outsole and upper.","evidence":["r_e_1","r_e_2","r_e_3","r_e_5"]},{"question":"Should I get the waterproof or vented (non‑waterproof) Moab 3?","short_answer":"Commenters say the vented version breathes much better and dries faster, making it preferable unless you hike in consistently wet/cold conditions; waterproof versions can feel hot and still eventually wet out in sustained moisture.","evidence":["r_e_1","r_e_2","r_e_3","r_e_6"]},{"question":"How is traction, especially on wet rock or slick surfaces?","short_answer":"On dry dirt and rock, grip is generally praised, but several users report that Moabs (including 3) can be slippery on wet rocks or smooth wet surfaces, so they’re not ideal if you hike often in rain or on wet slab.","evidence":["r_e_1","r_e_2","r_e_4","r_e_6"]},{"question":"Are Moab 3s good for wide feet?","short_answer":"Yes—multiple wide‑foot hikers say Moabs (especially the 3) are among the few models that fit them comfortably right out of the box.","evidence":["r_e_1","r_e_3","r_e_5"]}],"gotchas":[{"gotcha":"Durability may be limited for heavy, frequent, or technical hiking; some users report early failure of soles, hooks, or uppers.","severity":"high"},{"gotcha":"Reported slipperiness on wet, smooth, or slick surfaces despite generally good dry traction.","severity":"medium"},{"gotcha":"Waterproof versions can run hot and clammy; once water gets in, they dry slowly compared with vented models.","severity":"medium"},{"gotcha":"Some fit quirks like laces digging into the upper foot until lacing is adjusted; a short break‑in may be needed for the footbed to mold to the foot.","severity":"low"},{"gotcha":"General consensus that Moab 3 is a mid‑tier, mass‑market boot not intended for demanding thru‑hikes or very rough, long‑distance use.","severity":"medium"}]},"evidence":{"items":[{"ref_id":"r_e_1","type":"thread","title":"Mixed but generally positive views on Moab 3 quality, comfort, and durability","excerpt":"In a discussion asking if the Merrell Moab 3 is still a quality shoe after positive experiences with the Moab 2, hikers say Merrell makes good mid‑quality shoes similar to other big‑box brands and that if you liked the Moab 2 you’ll likely like the 3. One commenter notes the Moab 3 Vent is excellent in warm climates with a grippy Vibram sole and still in good shape after about 1000 km in under a year, especially praised for wide‑foot comfort. Others report durability problems with Merrells in general—like soles wearing quickly or hardware breaking—saying they’re great for beginners or occasional hikers but tend to break down faster for people hiking every weekend or on rough terrain. Another detailed user with multiple Merrells, including two pairs of Moab 3, describes them as initially average until they figured out lacing and gave them a week of wear, after which the footbed molded to their feet and became an excellent warm‑season outdoor shoe with good breathability and grip, though not great on slick wet surfaces.","author":"HikingBikingViking","subreddit":"hiking","thread":{"title":"Is Merrell Moab 3 a quality shoe?","subreddit":"hiking","url":"https://www.reddit.com/r/hiking/comments/17rqu2b/is_merrell_moab_3_a_quality_shoe/"}},{"ref_id":"r_e_2","type":"thread","title":"Experiences with Moab 3 waterproof boots highlight comfort but raise concerns for wet, rocky trails","excerpt":"In a thread asking for experience with the Merrell Moab 3 waterproof hiking boots, commenters largely describe them as very comfortable and good for casual or moderate hiking, but several warn they’re not ideal for consistently wet or rough conditions. Some note that while the waterproofing works at first, the boots can feel hot, and once water gets in they dry slowly. Others mention that Moabs can feel insecure and even slippery on wet rocks, suggesting they’re best for dirt trails rather than technical wet terrain. A few hikers emphasize that they’re fine for occasional weekend hikes but may wear faster and feel less supportive for long, rocky mileage.","author":".unknown","subreddit":"hiking","thread":{"title":"Does anyone have experience with the Merrell Moab 3 waterproof hiking boots?","subreddit":"hiking","url":"https://www.reddit.com/r/hiking/comments/1bxiu66/does_anyone_have_experience_with_the_merrell_moab/"}},{"ref_id":"r_e_3","type":"thread","title":"General Moab opinions: very comfy, accessible boots with average longevity","excerpt":"Campers discussing their opinions on Merrell Moabs (including Moab 3) frequently call them super comfortable right out of the box and a solid choice for people getting into hiking or wanting a reliable all‑round boot. Several say they’ve used Moabs for years as their go‑to hiking or camping footwear because of the fit and support, especially appreciating the wide sizing. At the same time, a number of users say they don’t last as long as more premium boots when used heavily—outsoles and uppers can wear or separate sooner than expected—so they see Moabs as great mid‑range boots suited to light and moderate use rather than heavy expeditions.","author":".unknown","subreddit":"CampingGear","thread":{"title":"What are your opinions on Merrell Moabs?","subreddit":"CampingGear","url":"https://www.reddit.com/r/CampingGear/comments/1cimu2b/what_are_your_opinions_on_merrell_moabs/"}},{"ref_id":"r_e_4","type":"thread","title":"Tactical users like Moab 3 Mid waterproof for comfort but question sole and wet performance","excerpt":"On r/tacticalgear, a user asking about the Merrell Moab 3 Mid hiking waterproof boot for tactical and range use gets feedback that it’s a comfortable, sneaker‑like boot that works fine for light duty, range days, and everyday wear. Some responders note they’ve worn Moab 3s for work or training without major issues, praising the out‑of‑box comfort and support compared with stiffer duty boots. Others, however, echo the broader hiking community’s concern that the soles can be slick on wet surfaces and that Merrell’s durability is only average, so these may not be ideal for demanding field use or very wet, slick environments even though they’re popular as a comfortable, affordable tactical‑style boot.","author":".unknown","subreddit":"tacticalgear","thread":{"title":"Merrell Moab 3 Mid hiking waterproof boot","subreddit":"tacticalgear","url":"https://www.reddit.com/r/tacticalgear/comments/1dmllbw/merrell_moab_3_mid_hiking_waterproof_boot/"}},{"ref_id":"r_e_5","type":"thread","title":"Is Moab 3 overhyped? Users see it as solid, comfy, mid‑tier hiking footwear","excerpt":"In a thread questioning whether the Merrell Moab 3 is overhyped or really awesome, hikers mostly land in the middle: they describe it as a very comfortable, widely available boot that works well for many people, especially those with wide feet, but not a miracle shoe. Several compare it to the Moab 2, saying the Moab 3 has a revised sole pattern and support and feels like an incremental improvement while still occupying the same mid‑range quality bracket. Some posters caution that Moab 3s will show their limitations if you hike long distances every week or on harsh terrain, and a few share stories of pairs wearing out faster than they’d like, while others say they’ve gotten plenty of use and simply replace them when they’re worn because the comfort and fit are worth it.","author":".unknown","subreddit":"hiking","thread":{"title":"Merrell Moab 3 just overhyped or really awesome?","subreddit":"hiking","url":"https://www.reddit.com/r/hiking/comments/1laiera/merrell_moab_3_just_overhyped_or_really_awesome/"}},{"ref_id":"r_e_6","type":"thread","title":"Waterproof vs non‑waterproof Moab 3: breathability, drying time, and trail conditions","excerpt":"In a discussion focused on Merrell Moab 3 waterproof vs non‑waterproof, hikers repeatedly recommend the non‑waterproof (vented) version for most conditions because it’s much more breathable and dries faster if it does get wet. Commenters explain that waterproof Moab 3s can feel hot and sweaty, and in sustained rain or if water comes over the ankle, your feet still end up wet but then stay wet longer. Several users note that for warm climates or three‑season hiking, vented Moab 3s paired with good socks are more comfortable overall, while the waterproof versions are reserved for colder, shoulder‑season hikes or those who regularly deal with mud and shallow water. A few also tie this to traction, mentioning that regardless of membrane, Moabs can be less confidence‑inspiring on wet rock, reinforcing the idea that they’re better on dirt and mixed trails than slick slab.","author":".unknown","subreddit":"hiking","thread":{"title":"Merrell Moab 3 - Waterproof vs Non-waterproof?","subreddit":"hiking","url":"https://www.reddit.com/r/hiking/comments/1c7c0k8/merrell_moab_3_waterproof_vs_nonwaterproof/"}}]}}},"success":true}],"meta":{"result":{"products_requested":1,"products_successful":1,"products_failed":0,"products_pending":0},"progress":{"products_processed":1,"products_total":1,"percent_complete":100},"stop_date":"2026-02-27T01:55:21.448Z","start_date":"2026-02-27T01:49:09.997Z","duration_ms":371451,"credits_used":0,"request_id":"req_01KJEGC0QK7SVH50ACGPHHVKJ5"},"error":null,"status":"completed","pagination":{"page":1,"page_size":50,"total_items":1,"total_pages":1,"has_next":false,"has_prev":false},"execution_id":"extract-urls-47272d7d-5286-4b7d-8475-6583984e3a7e"};
+
+const product = DATA.data[0].product;
+const meta = DATA.meta;
+
+const COLOR_MAP = {
+  'tan/beige':'#d2b48c','brown':'#8B4513','brown / tan':'#a0785a','dark brown':'#5c3317',
+  'black':'#1a1a1a','olive/green':'#556B2F','olive / dark green':'#4b5320','orange':'#e67e22',
+  'yellow':'#f1c40f','black-and-yellow':'linear-gradient(135deg,#1a1a1a 50%,#f1c40f 50%)',
+  'tan / gold':'#c9a961','white':'#ffffff','light brown / tan / taupe':'#b8977e',
+  'brown (reddish-brown)':'#8b3a2a','black / dark charcoal':'#2d2d2d','black (in laces)':'#111',
+  'red':'#c0392b','blue':'#2980b9','navy':'#1a2744','gray':'#7f8c8d','grey':'#7f8c8d',
+  'green':'#27ae60','pink':'#e84393','purple':'#8e44ad','beige':'#d2b48c','cream':'#fffdd0',
+  'khaki':'#c3b091','silver':'#bdc3c7','gold':'#d4a017','burgundy':'#800020','coral':'#ff7f50',
+  'teal':'#008080','turquoise':'#40e0d0','maroon':'#800000','ivory':'#fffff0','charcoal':'#36454f',
+};
+
+function starsSVG(rating, scale, size) {
+  size = size || 18;
+  var h = '';
+  for (var i = 1; i <= scale; i++) {
+    var filled = i <= Math.round(rating);
+    h += '<svg class="star '+(filled?'':'star-empty')+'" width="'+size+'" height="'+size+'" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
+  }
+  return h;
+}
+
+function reviewStars(rating) {
+  var h = '';
+  for (var i = 1; i <= 5; i++) h += '<span class="review-star '+(i<=rating?'':'empty')+'">&#9733;</span>';
+  return h;
+}
+
+function syntaxHighlight(json) {
+  var s = JSON.stringify(json, null, 2);
+  return s.replace(/("(\\u[\da-fA-F]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(\.\d+)?([eE][+-]?\d+)?)/g, function(m) {
+    var c = 'json-number';
+    if (/^"/.test(m)) c = /:$/.test(m) ? 'json-key' : 'json-string';
+    else if (/true|false/.test(m)) c = 'json-bool';
+    else if (/null/.test(m)) c = 'json-null';
+    return '<span class="'+c+'">'+m+'</span>';
+  });
+}
+
+function ratingDistribution(reviews) {
+  var d = {5:0,4:0,3:0,2:0,1:0};
+  (reviews||[]).forEach(function(r) { d[r.rating] = (d[r.rating]||0)+1; });
+  var mx = Math.max.apply(null, Object.values(d).concat([1]));
+  return {dist:d, max:mx};
+}
+
+var ICONS = {
+  attributes: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
+  images: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>',
+  reviews: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+  variants: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
+  similar: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
+  reddit: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 0-.462.342.342 0 0 0-.461 0c-.545.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.206-.095z"/></svg>',
+  brand: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>',
+  faqs: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
+  video: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>',
+  json: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
+};
+
+function icon(k) { return ICONS[k]||''; }
+
+function heading(ic, cls, title, count) {
+  return '<div class="section-heading"><div class="section-heading-icon '+cls+'">'+icon(ic)+'</div><h3>'+title+'</h3>'+(count!=null?'<span class="section-count">'+count+'</span>':'')+'</div>';
+}
+
+function empty(ic, title, desc, detail) {
+  return '<div class="empty-state"><div class="empty-state-icon">'+icon(ic)+'</div><h4>'+title+'</h4><p>'+desc+'</p>'+(detail?'<div class="empty-detail">'+detail+'</div>':'')+'</div>';
+}
+
+function esc(s) { return s ? String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;') : ''; }
+
+function render() {
+  var p = product;
+  var rd = ratingDistribution(p.reviews);
+  var dist = rd.dist, mx = rd.max;
+  var sizeOpt = (p.options||[]).find(function(o){return o.name==='Size';});
+  var h = '';
+
+  // Hero
+  h += '<section class="hero"><div class="gallery"><div class="gallery-thumbs">';
+  (p.images||[]).forEach(function(img,i) {
+    h += '<div class="gallery-thumb '+(i===0?'active':'')+'" onclick="switchImage('+i+')"><img src="'+esc(img.url)+'" alt="'+esc(img.alt_text)+'"></div>';
+  });
+  h += '</div><div class="gallery-main"><img id="mainImage" src="'+esc((p.images[0]||{}).url)+'" alt="'+esc((p.images[0]||{}).alt_text)+'"></div></div>';
+
+  h += '<div class="product-info"><div><div class="brand-label">'+esc(p.brand)+'</div><h2 class="product-title">'+esc(p.title)+'</h2></div>';
+  if (p.average_rating) h += '<div class="rating-row"><div class="stars">'+starsSVG(p.average_rating, p.rating_scale||5)+'</div><span class="rating-text"><strong>'+p.average_rating+'</strong> / '+(p.rating_scale||5)+' &mdash; '+(p.review_count||0)+' reviews</span></div>';
+  h += '<div class="price-row"><span class="price">$'+p.price.current_value.toFixed(2)+'</span><span class="price-currency">'+esc(p.price.currency)+'</span>';
+  h += p.is_available ? '<span class="badge badge-success"><span class="badge-dot"></span> In Stock</span>' : '<span class="badge badge-warn">Unavailable</span>';
+  h += '</div>';
+  h += '<p class="product-summary">'+esc(p.description)+'</p>';
+
+  h += '<div class="meta-chips">';
+  if (p.attributes.color) h += '<span class="chip"><span class="chip-label">Color:</span> '+esc(p.attributes.color.merchant_label)+' ('+esc(p.attributes.color.iscc_family)+')</span>';
+  if (p.attributes.gender) h += '<span class="chip"><span class="chip-label">Gender:</span> '+esc(p.attributes.gender)+'</span>';
+  if (p.attributes.material) h += '<span class="chip"><span class="chip-label">Material:</span> '+esc(p.attributes.material.merchant_label)+'</span>';
+  if (p.attributes.style) h += '<span class="chip"><span class="chip-label">Style:</span> '+esc(p.attributes.style.join(', '))+'</span>';
+  if (p.attributes.occasion) h += '<span class="chip"><span class="chip-label">Occasion:</span> '+esc(p.attributes.occasion.join(', '))+'</span>';
+  if (p.google_product_category_path) h += '<span class="chip"><span class="chip-label">Category:</span> '+esc(p.google_product_category_path)+'</span>';
+  h += '<span class="chip"><span class="chip-label">Store:</span> '+esc(p.store_domain)+'</span>';
+  h += '</div>';
+
+  if (sizeOpt) {
+    h += '<div><div class="section-label">Available Sizes</div><div class="sizes-grid">';
+    sizeOpt.values.forEach(function(s,i) { h += '<button class="size-btn '+(i===0?'active':'')+'" onclick="selectSize(this)">'+esc(s)+'</button>'; });
+    h += '</div></div>';
+  }
+
+  h += '<div class="cta-row"><a href="'+esc(p.url)+'" target="_blank" class="btn-primary">View on '+esc(p.vendor)+'</a>';
+  h += '<button class="btn-outline" onclick="document.getElementById(&quot;section-json&quot;).scrollIntoView({behavior:&quot;smooth&quot;})">View Raw JSON</button></div>';
+  h += '</div></section>';
+
+  // Attributes
+  h += '<section class="content-section">'+heading('attributes','icon-green','Extracted Attributes');
+  h += '<div class="attr-grid">';
+  if (p.attributes.summary) h += '<div class="attr-card"><h4>Summary</h4><p>'+esc(p.attributes.summary)+'</p></div>';
+  if (p.attributes.features) h += '<div class="attr-card"><h4>Features</h4><p>'+esc(p.attributes.features)+'</p></div>';
+  if (p.attributes.additional_attributes && p.attributes.additional_attributes.length) {
+    h += '<div class="attr-card"><h4>Additional Attributes</h4><ul class="attr-features">';
+    p.attributes.additional_attributes.forEach(function(a){h+='<li>'+esc(a)+'</li>';});
+    h += '</ul></div>';
+  }
+  if (p.attributes.material) {
+    h += '<div class="attr-card"><h4>Material</h4><p style="margin-bottom:8px">'+esc(p.attributes.material.merchant_label)+'</p>';
+    if (p.attributes.material.secondary) { h+='<ul>'; p.attributes.material.secondary.forEach(function(m){h+='<li>'+esc(m)+'</li>';}); h+='</ul>'; }
+    h += '</div>';
+  }
+  h += '<div class="attr-card"><h4>Extraction Meta</h4><p style="font-size:13px;color:var(--text-dim)"><strong>Execution ID:</strong> '+esc(DATA.execution_id)+'<br><strong>Request ID:</strong> '+esc(meta.request_id)+'<br><strong>Duration:</strong> '+(meta.duration_ms/1000).toFixed(1)+'s<br><strong>Credits Used:</strong> '+meta.credits_used+'<br><strong>Platform ID:</strong> '+esc(p.platform_id)+'<br><strong>Updated:</strong> '+new Date(p.updated_at).toLocaleString()+'</p></div>';
+  h += '<div class="attr-card"><h4>Product IDs</h4><p style="font-size:13px;color:var(--text-dim);word-break:break-all"><strong>Internal ID:</strong> '+esc(p.id)+'<br><strong>Handle:</strong> '+esc(p.handle)+'<br><strong>Google Category:</strong> '+esc(p.google_product_category_id)+' &mdash; '+esc(p.google_product_category_path)+'</p></div>';
+  h += '</div></section>';
+
+  // Images
+  if (p.images && p.images.length) {
+    h += '<section class="content-section">'+heading('images','icon-brown','Image Analysis',p.images.length+' images');
+    h += '<div class="img-analysis-grid">';
+    p.images.forEach(function(img,i) {
+      var a = img.attributes||{};
+      h += '<div class="img-card"><div class="img-card-preview"><img src="'+esc(img.url)+'" alt="'+esc(img.alt_text)+'"></div><div class="img-card-body">';
+      h += '<h4>Image '+(i+1)+' &mdash; Position '+img.position;
+      if (a.flat_lay) h += ' <span class="badge badge-info" style="margin-left:8px">Flat Lay</span>';
+      if (a.confidence) h += ' <span class="badge badge-success" style="margin-left:4px">'+esc(a.confidence)+' confidence</span>';
+      h += '</h4>';
+      if (a.description) h += '<p>'+esc(a.description)+'</p>';
+      if (a.text) h += '<p style="font-size:12px"><strong>Detected Text:</strong> '+esc(a.text.replace(/\n/g,', '))+'</p>';
+      if (a.colors && a.colors.length) {
+        h += '<div class="section-label" style="margin-top:12px">Detected Colors</div><div class="color-swatches">';
+        a.colors.forEach(function(c) {
+          var bg = COLOR_MAP[c.color]||COLOR_MAP[c.color.toLowerCase()]||'#888';
+          var isG = bg.indexOf('linear')===0;
+          h += '<div class="color-swatch"><span class="swatch-dot" style="'+(isG?'background:'+bg:'background-color:'+bg)+'"></span> '+esc(c.color)+'</div>';
+        });
+        h += '</div>';
+      }
+      if (a.labels && a.labels.length) {
+        h += '<div class="section-label" style="margin-top:14px">Labels</div><div class="label-tags">';
+        a.labels.forEach(function(l){h+='<span class="label-tag">'+esc(l)+'</span>';});
+        h += '</div>';
+      }
+      h += '</div></div>';
+    });
+    h += '</div></section>';
+  }
+
+  // Reviews
+  h += '<section class="content-section">'+heading('reviews','icon-orange','Customer Reviews',(p.review_count||0)+' reviews');
+  if (p.reviews && p.reviews.length) {
+    h += '<div class="reviews-header"><div class="reviews-summary"><div class="reviews-big-num">'+p.average_rating+'</div><div><div class="stars" style="margin-bottom:4px">'+starsSVG(p.average_rating,p.rating_scale||5,16)+'</div><div style="font-size:13px;color:var(--text-dim)">'+(p.review_count||0)+' total reviews</div></div><div class="reviews-bars">';
+    [5,4,3,2,1].forEach(function(n){h+='<div class="review-bar-row"><span>'+n+'</span><div class="review-bar"><div class="review-bar-fill" style="width:'+((dist[n]/mx)*100)+'%"></div></div><span>'+dist[n]+'</span></div>';});
+    h += '</div></div></div><div class="reviews-list">';
+    p.reviews.forEach(function(r){
+      h += '<div class="review-card"><div class="review-card-header"><h4>'+esc(r.title)+'</h4><div class="review-meta"><span class="review-stars">'+reviewStars(r.rating)+'</span><span>'+esc(r.reviewer_name)+'</span><span>'+esc(r.date)+'</span></div></div><p>'+esc(r.content)+'</p></div>';
+    });
+    h += '</div>';
+  } else {
+    h += empty('reviews','No Reviews','No customer reviews were found for this product.');
+  }
+  h += '</section>';
+
+  // Reddit
+  var ri = p.reddit_insights;
+  h += '<section class="content-section">'+heading('reddit','icon-reddit','Reddit Insights', ri ? ri.coverage.threads_used+' threads &middot; '+ri.coverage.subreddits.map(function(s){return 'r/'+esc(s);}).join(', ') : null);
+  if (ri && ri.status === 'no_results') {
+    h += empty('reddit','No Reddit Discussions Found', (ri.match||{}).notes||'No matching Reddit threads were found.', 'sentiment: '+ri.conversation_summary.sentiment.label+' &middot; confidence: '+ri.match.confidence);
+  } else if (ri && ri.status === 'ok' && ri.conversation_summary) {
+    var cs = ri.conversation_summary;
+    var sent = cs.sentiment || {};
+    var sentClass = 'sentiment-'+(sent.label||'neutral');
+
+    // Overview card
+    h += '<div class="reddit-overview"><div><div class="reddit-oneliner">'+esc(cs.one_liner)+'</div>';
+    h += '<div class="reddit-meta">';
+    h += '<span class="reddit-sentiment '+sentClass+'"><span class="badge-dot"></span> '+esc(sent.label||'unknown')+' sentiment</span>';
+    if (ri.match && ri.match.confidence != null) h += '<span class="reddit-confidence">'+Math.round(ri.match.confidence*100)+'% match confidence</span>';
+    h += '</div>';
+    if (sent.explanation) h += '<p style="font-size:13px;color:var(--text-dim);margin-top:10px;line-height:1.6">'+esc(sent.explanation)+'</p>';
+    h += '</div></div>';
+
+    // Top Themes
+    if (cs.top_themes && cs.top_themes.length) {
+      h += '<div class="reddit-subsection"><div class="reddit-subsection-title">Top Themes</div><div class="reddit-themes">';
+      cs.top_themes.forEach(function(t){
+        h += '<div class="reddit-theme"><span class="reddit-theme-name">'+esc(t.theme)+'</span><span class="stance-badge stance-'+esc(t.stance)+'">'+esc(t.stance)+'</span></div>';
+      });
+      h += '</div></div>';
+    }
+
+    // Use Cases
+    if (cs.use_cases && cs.use_cases.length) {
+      h += '<div class="reddit-subsection"><div class="reddit-subsection-title">Common Use Cases</div><div class="reddit-use-cases">';
+      cs.use_cases.forEach(function(u){
+        h += '<span class="reddit-use-case">'+esc(u.use_case)+'</span>';
+      });
+      h += '</div></div>';
+    }
+
+    // Gotchas
+    if (cs.gotchas && cs.gotchas.length) {
+      h += '<div class="reddit-subsection"><div class="reddit-subsection-title">Watch Out For</div><div class="reddit-gotchas">';
+      cs.gotchas.forEach(function(g){
+        h += '<div class="reddit-gotcha gotcha-'+esc(g.severity)+'"><span class="gotcha-severity gotcha-'+esc(g.severity)+'">'+esc(g.severity)+'</span><span class="gotcha-text">'+esc(g.gotcha)+'</span></div>';
+      });
+      h += '</div></div>';
+    }
+
+    // Common Questions
+    if (cs.common_questions && cs.common_questions.length) {
+      h += '<div class="reddit-subsection"><div class="reddit-subsection-title">Community Q&amp;A</div><div class="reddit-questions">';
+      cs.common_questions.forEach(function(q){
+        h += '<div class="reddit-question"><h4>'+esc(q.question)+'</h4><p>'+esc(q.short_answer)+'</p></div>';
+      });
+      h += '</div></div>';
+    }
+
+    // Comparisons
+    if (cs.comparisons && cs.comparisons.length) {
+      h += '<div class="reddit-subsection"><div class="reddit-subsection-title">Compared To</div><div class="reddit-comparisons">';
+      cs.comparisons.forEach(function(c){
+        h += '<div class="reddit-comparison"><h4>vs '+esc(c.compared_to)+'</h4><p>'+esc(c.summary)+'</p></div>';
+      });
+      h += '</div></div>';
+    }
+
+    // Evidence threads
+    if (ri.evidence && ri.evidence.items && ri.evidence.items.length) {
+      h += '<div class="reddit-subsection"><div class="reddit-subsection-title">Source Threads</div><div class="reddit-evidence">';
+      ri.evidence.items.forEach(function(e){
+        h += '<div class="reddit-evidence-card"><h4>'+esc(e.title)+'</h4>';
+        h += '<p>'+esc(e.excerpt)+'</p>';
+        h += '<div class="reddit-evidence-footer">';
+        if (e.author) h += '<span>u/'+esc(e.author)+'</span>';
+        if (e.subreddit) h += '<span>r/'+esc(e.subreddit)+'</span>';
+        if (e.thread && e.thread.url) h += '<a href="'+esc(e.thread.url)+'" target="_blank">View thread &rarr;</a>';
+        h += '</div></div>';
+      });
+      h += '</div></div>';
+    }
+  } else {
+    h += empty('reddit','Reddit Insights Unavailable','Reddit analysis data was not returned for this product.');
+  }
+  h += '</section>';
+
+  // Brand PDP
+  h += '<section class="content-section">'+heading('brand','icon-brown','Brand PDP Lookup');
+  if (p.brand_pdp && p.brand_pdp.success) {
+    h += '<div class="attr-grid"><div class="attr-card"><h4>Brand PDP</h4><p><strong>'+esc(p.brand_pdp.brand_name)+'</strong> &mdash; <a href="'+esc(p.brand_pdp.brand_pdp_url)+'" target="_blank" style="color:var(--accent-green-dark)">'+esc(p.brand_pdp.brand_pdp_url)+'</a></p>';
+    if (p.brand_pdp.product_title) h+='<p style="margin-top:8px">'+esc(p.brand_pdp.product_title)+'</p>';
+    h += '</div></div>';
+  } else if (p.brand_pdp) {
+    h += empty('brand','Not Found on Brand Site', esc(p.brand_pdp.error||'Product not matched on brand site.'), esc(p.brand_pdp.brand_name)+' &middot; '+esc(p.brand_pdp.brand_domain));
+  } else {
+    h += empty('brand','Brand PDP Data Unavailable','No brand site lookup was performed for this product.');
+  }
+  h += '</section>';
+
+  // Variants
+  if (p.variants && p.variants.length) {
+    h += '<section class="content-section">'+heading('variants','icon-dark','Variants',p.variants.length+' SKUs');
+    h += '<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden"><table class="variants-table"><thead><tr><th>SKU</th><th>Color</th><th>Size</th><th>Price</th><th>Available</th></tr></thead><tbody>';
+    p.variants.forEach(function(v){
+      h+='<tr><td style="font-family:monospace;font-size:12px">'+esc(v.sku)+'</td><td>'+esc(v.option1)+'</td><td>'+esc(v.option2)+'</td><td>$'+v.price.current_value.toFixed(2)+'</td><td>'+(v.is_available?'<span class="badge badge-success"><span class="badge-dot"></span> Yes</span>':'<span class="badge badge-warn">No</span>')+'</td></tr>';
+    });
+    h += '</tbody></table></div></section>';
+  }
+
+  // Also Seen Here
+  if (p.similar_products && p.similar_products.length) {
+    h += '<section class="content-section">'+heading('similar','icon-green','Also Seen Here',p.similar_products.length+' retailers');
+    h += '<div class="similar-grid">';
+    p.similar_products.forEach(function(s){
+      var domain = '';
+      try { domain = new URL(s.url).hostname.replace(/^www./,''); } catch(e){}
+      var favicon = domain ? 'https://www.google.com/s2/favicons?domain='+encodeURIComponent(domain)+'&sz=32' : '';
+      h+='<div class="similar-card">';
+      h+='<div class="similar-card-header"><div class="similar-card-icon">'+(favicon?'<img src="'+esc(favicon)+'" alt="" width="20" height="20">':'')+'<span class="similar-card-domain">'+esc(domain)+'</span></div><span class="similarity-badge sim-'+esc(s.similarity)+'">'+esc(s.similarity)+'</span></div>';
+      h+='<h4>'+esc(s.title)+'</h4>';
+      if (s.brand) h+='<div class="sim-brand">'+esc(s.brand)+'</div>';
+      h+='<a href="'+esc(s.url)+'" target="_blank">View listing &rarr;</a>';
+      h+='</div>';
+    });
+    h += '</div></section>';
+  }
+
+  // FAQs
+  h += '<section class="content-section">'+heading('faqs','icon-muted','FAQs');
+  if (p.faqs && p.faqs.length) {
+    h += '<div class="reviews-list">';
+    p.faqs.forEach(function(f){h+='<div class="review-card"><h4 style="margin-bottom:6px">'+esc(f.question)+'</h4><p>'+esc(f.answer)+'</p></div>';});
+    h += '</div>';
+  } else {
+    h += empty('faqs','No FAQs Available','No frequently asked questions were found on the product page.');
+  }
+  h += '</section>';
+
+  // Video
+  h += '<section class="content-section">'+heading('video','icon-muted','Product Video');
+  if (p.video_url) {
+    h += '<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;aspect-ratio:16/9"><video src="'+esc(p.video_url)+'" controls style="width:100%;height:100%;object-fit:contain"></video></div>';
+  } else {
+    h += empty('video','No Video Available','No product video was found on the listing page.');
+  }
+  h += '</section>';
+
+  // JSON
+  h += '<section class="content-section" id="section-json">'+heading('json','icon-dark','Raw JSON Response');
+  h += '<div class="json-panel"><pre>'+syntaxHighlight(DATA)+'</pre></div></section>';
+
+  document.getElementById('app').innerHTML = h;
+}
+
+function switchImage(idx) {
+  document.getElementById('mainImage').src = product.images[idx].url;
+  document.querySelectorAll('.gallery-thumb').forEach(function(t,i) { t.classList.toggle('active', i===idx); });
+}
+
+function selectSize(el) {
+  document.querySelectorAll('.size-btn').forEach(function(b){b.classList.remove('active');});
+  el.classList.add('active');
+}
+
+render();
+</script>
+</body>
+</html>
